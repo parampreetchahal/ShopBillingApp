@@ -17,7 +17,11 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "CAMERA"
+      ],
+      "predictiveBackGestureEnabled": false,
+      "package": "com.parampreetchahal.ShopBillingApp"
     },
     "web": {
       "output": "static",
@@ -34,11 +38,23 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-sqlite",
+      "expo-image",
+      "expo-audio",
+      "expo-web-browser",
+      "expo-asset",
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e6325e55-c36b-4292-b6cc-08dd2e8fa8e0"
+      }
     }
   }
 }
